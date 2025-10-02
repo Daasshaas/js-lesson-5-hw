@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/BrightTheme.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.js"></script>
+</head>
+<body>
+      <main class="container">
+    <h1>Гра — натисни правильну клавішу</h1>
+
+    <div class="game">
+      <div id="key" aria-live="polite">?</div>
+         <div id="hint">Підказка з'явиться тут</div>
+      <div class="controls">
+        <button id="newGame">Нова гра</button>
+        <button id="showSteps">Покроково (PNotify)</button>
+      </div>
+      <div class="progress" aria-hidden="true">
+        <div class="bar" id="bar" style="width:0%"></div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>Статистика продажів за останній місяць</h2>
+    <canvas id="sales-chart" width="800" height="300"></canvas>
+
+    <script src="./index.js"></script>
+  </main>
+</body>
+</html>
